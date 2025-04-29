@@ -1,2 +1,2 @@
 #Projet concretisation 2025: ***Faraway***
-Par Laly HROUCH, LOUIS LOUVEL et Candice RAGEY--DEPOIL
+Par Laly HROUCH, Louis LOUVEL et Candice RAGEY--DEPOIL
