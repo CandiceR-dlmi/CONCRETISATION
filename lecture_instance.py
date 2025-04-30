@@ -7,9 +7,16 @@ Created on Tue Apr 29 14:09:06 2025
 """
 
 def ouvre(nomf : str):
-    fichier = open(nomf, "r")
-    l=fichier.read().split()
-    fichier.close()
-    for k in range(len(l)):
-        l[k]=int(l[k])
-    return l
+    with open(nomf, "r") as fichier:
+        l=fichier.read().split()
+        for k in range(len(l)):
+            l[k]=int(l[k])
+        return l
+
+def sortie(tab, score, i=0):
+    with open(f"sortie{i}.txt", "w") as fichier:
+        for k in range(len(tab)):
+            fichier.write(str(tab[k]))
+            fichier.write(" ")
+        fichier.write("\n")
+        fichier.write(str(score))
