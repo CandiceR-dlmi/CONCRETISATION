@@ -7,4 +7,4 @@
   
 * A FAIRE
   + définir la meilleure stratégie à adopter
-  * etc
+  * programmer une/plusieurs algo sol
