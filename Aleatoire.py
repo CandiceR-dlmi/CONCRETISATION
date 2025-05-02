@@ -16,8 +16,10 @@ def construit(rinit, sinit):
     
     #choisit aléatoirement les 8 cartes régions à jouer
     for n in range(8):
-        rfin.append(choices(rinit,k=1)[0])
-        rinit.remove(rfin[n])
+        #print(rinit, rfin)
+        rfin.append(choices(rinit)[0])
+        rinit.remove(rfin[-1])
+    
     compteur=0
     
     #compte le nombre de sanctuaires piochés
@@ -27,8 +29,8 @@ def construit(rinit, sinit):
     
     #choisit les sanctuaires aléatoirement
     for n in range(compteur):
-        sfin.append(choices(sinit,k=1)[0])
-        sinit.remove(sfin[n])
+        sfin.append(choices(sinit)[0])
+        sinit.remove(sfin[-1])
     return rfin+sfin
     
 
@@ -57,8 +59,8 @@ def cherche_meilleur(instance : list):
     sanct=t[1]
     
     n=time.time()
-    while time.time()-n<5 :
-        combinaison=construit(region,sanct)
+    while time.time()-n<55 :
+        combinaison=construit(region.copy(),sanct.copy())
         score=compte_points(combinaison)
         if score>meilleur_score:
             meilleur_combinaison=combinaison.copy()
