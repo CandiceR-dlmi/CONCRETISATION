@@ -11,4 +11,5 @@
 
 
 ## Idée de stratégie
+  * 1ère idée candice 
     + Trier cartes décroissant nb points apportés (enlever celles qui n'apportent aucun point) 
