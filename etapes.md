@@ -7,8 +7,9 @@
   
 * A FAIRE
   + définir la meilleure stratégie à adopter
-  * programmer un/plusieurs algo sol
+  + programmer un/plusieurs algo sol
 
 
 ## Idée de stratégie
-  * Trier cartes décroissant nb points apportés (enlever celles qui n'apportent aucun point) 
+  *
+  + Trier cartes décroissant nb points apportés (enlever celles qui n'apportent aucun point) 
