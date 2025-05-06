@@ -11,5 +11,4 @@
 
 
 ## Idée de stratégie
-  *
     + Trier cartes décroissant nb points apportés (enlever celles qui n'apportent aucun point) 
