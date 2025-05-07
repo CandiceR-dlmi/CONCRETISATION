@@ -9,8 +9,8 @@
   + définir la meilleure stratégie à adopter
   + programmer un/plusieurs algo sol
   + potentiellement:
-    ++ tri par couleur
-    ++ tri par ressource
+     + tri par couleur
+     + tri par ressource
 
 
 ## Idée de stratégie
