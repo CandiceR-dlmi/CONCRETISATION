@@ -29,5 +29,12 @@ def tri_ressource_n_ind(inst:list):
     if ele[2]=='I':
       ressources["I"].append(carte)
     if ele[3][0]>0:
-      ressources
+      ressources["P"].append((carte,ele[3][0]))
+    if ele[3][1]>0:
+      ressources["CHI"].append((carte,ele[3][1]))
+    if ele[3][2]>0:
+      ressources["CHA"].append((carte,ele[3][2]))
+  return ressources
+  
+      
 
