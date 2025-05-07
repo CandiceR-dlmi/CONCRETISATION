@@ -16,3 +16,18 @@ def tri_couleur(inst:list):
     else:
       l[4].append(ele)
   return l
+
+def tri_ressource_n_ind(inst:list):
+  ressources={"I":[], "N":[],"P":[],"CHI":[],"CHA":[]}
+  for carte in inst:
+    if carte<100:
+      ele= cartes_region[carte-1]
+    elif carte<100:
+      ele=cartes_sanctuaire[carte-1]
+    if ele[1]=='N':
+      ressources["N"].append(carte)
+    if ele[2]=='I':
+      ressources["I"].append(carte)
+    if ele[3][0]>0:
+      ressources
+
