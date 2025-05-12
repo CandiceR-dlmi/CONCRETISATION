@@ -66,3 +66,21 @@ def cherche_meilleur(instance : list):
             meilleur_combinaison=combinaison.copy()
             meilleur_score=score
     return (meilleur_combinaison, meilleur_score)
+
+def les_meilleures(instance:list):
+    meilleur_combinaison=[]
+    meilleur_score=0
+    res=[]
+    t=separe(instance)
+    region=t[0]
+    sanct=t[1]
+    
+    n=time.time()
+    while time.time()-n<10 :
+        combinaison=construit(region.copy(),sanct.copy())
+        score=compte_points(combinaison)
+        if score>meilleur_score:
+            meilleur_combinaison=combinaison.copy()
+            meilleur_score=score
+            res.append((meilleur_score,meilleur_combinaison))
+    return res
