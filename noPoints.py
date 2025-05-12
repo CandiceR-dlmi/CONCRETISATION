@@ -2,7 +2,7 @@
 """
 Éditeur de Spyder
 
-Ceci est un script temporaire.
+Ceci est un script temporaire. 
 """
 from cartes import *
 
