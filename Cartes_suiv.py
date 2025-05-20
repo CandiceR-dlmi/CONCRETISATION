@@ -87,7 +87,7 @@ def supp_sanct(une_inst)    :
     for i in range(0,7):
         if une_inst[i]<une_inst[i+1]:
             cpt_s+=1
-    for i in range(cpt_s):
+    for i in range(7-cpt_s):
         une_inst.pop(-1)
 def run(inst:list):
     mieux=les_meilleures(inst)
@@ -125,3 +125,34 @@ def run(inst:list):
         cartes_suiv(inst, suiv, ech)
         s=harmonie(suiv)
     return la_meilleure
+########SUPPRIMER SANCT SUPP
+"""
+t=time.time()
+print(run(ouvre("8_7_a.txt")),"8_7_a.txt")
+print(time.time()-t)
+
+t=time.time()
+print(run(ouvre("8_7_b.txt")),"8_7_b.txt")
+print(time.time()-t)
+
+t=time.time()
+print(run(ouvre("8_7_c.txt")),"8_7_c.txt")
+print(time.time()-t)
+
+t=time.time()
+print(run(ouvre("12_10.txt")),"12_10.txt")
+print(time.time()-t)
+
+t=time.time()
+print(run(ouvre("14_18.txt")))
+print("14_18.txt")
+print(time.time()-t)
+
+t=time.time()
+print(run(ouvre("15_9.txt")),"15_9.txt")
+print(time.time()-t)
+"""
+
+t=time.time()
+print(run(ouvre("competition_07.txt")),"competition_07.txt")
+print(time.time()-t)
