@@ -25,4 +25,4 @@ def supp_sanct(instance):
         if l>meilleur_score:
             meilleur_score=l
             meilleur=k
-    return (region+meilleur, meilleur_score)
+    return (meilleur_score,region+meilleur)
