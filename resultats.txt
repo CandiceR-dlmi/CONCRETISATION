@@ -1,4 +1,4 @@
-22 tests et 50 min de calcul par instance
+22 tests et 50 min de calcul par instance sur les premières instances 
 doublons supprimés
 
 
