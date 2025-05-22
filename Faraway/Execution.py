@@ -39,7 +39,7 @@ def run(instance:str) -> None:
         i=0
         ech=[]
         t2=time.time()
-        while time.time()-t2<l/320:
+        while time.time()-t2<l/160:
             temp=rand_inst_w_suiv(inst,s)
             temp_t=supp_sanct(temp)
             if len(ech)==0 or temp_t[0] >= ech[-1][0]:
