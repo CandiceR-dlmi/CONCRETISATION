@@ -12,6 +12,7 @@ from cartes_suivante import rand_inst_w_suiv, cartes_suiv
 from harmonisation import harmonie, supp_sanct
 
 def run(instance:str) -> None:
+    temps=time.time()
     """
     Cherche la meilleure main théoriquement jouable à partir d'une instance de cartes
     
@@ -32,13 +33,13 @@ def run(instance:str) -> None:
     suiv=[[0 for _ in range (l)] for i in range (l)]
     t=time.time()
     la_meilleure=mieux[-1]
-    while time.time()-t<21600:
+    while time.time()-t<42:
         s=harmonie(suiv)
         #prendre un élément aléatoirement, puis construire une suite de cartes grace a suiv
         i=0
         ech=[]
         t2=time.time()
-        while time.time()-t2<500:
+        while time.time()-t2<9:
             temp=rand_inst_w_suiv(inst,s)
             temp_t=supp_sanct(temp)
             if len(ech)==0 or temp_t[0] >= ech[-1][0]:
@@ -50,4 +51,5 @@ def run(instance:str) -> None:
             ech.append(la_meilleure)
         cartes_suiv(inst, suiv, ech)
     sortie(la_meilleure, int(instance[-6:-4]))
+    print(temps-time.time())
     return 

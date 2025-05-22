@@ -19,12 +19,9 @@ def cartes_suiv(inst : list, suiv : list, mieux : list) -> None:
         Il n'y a rien à renvoyer
 
     """
-    """mettre l'instance, une matrice avec les probas que deux cartes se suivent et mieux=les_meilleures"""
-    somme_l=[0 for i in range (len(inst))]
     for j in range(len(mieux)):
         for i in range (len(mieux[j][1])-1):
             x,y = inst.index(mieux[j][1][i]), inst.index(mieux[j][1][i+1])
-            somme_l[x]+=mieux[j][0]//8
             suiv[x][y]+=mieux[j][0]//8
     return 
 
