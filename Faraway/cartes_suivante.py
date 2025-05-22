@@ -19,7 +19,7 @@ def cartes_suiv(inst : list, suiv : list, mieux : list) -> None:
         Il n'y a rien à renvoyer
 
     """
-    """mettre l'instance (réduite ou non), une matrice avec les probas que deux cartes se suivent et mieux=les_meilleures"""
+    """mettre l'instance, une matrice avec les probas que deux cartes se suivent et mieux=les_meilleures"""
     somme_l=[0 for i in range (len(inst))]
     for j in range(len(mieux)):
         for i in range (len(mieux[j][1])-1):
