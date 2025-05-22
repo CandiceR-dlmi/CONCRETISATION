@@ -25,7 +25,7 @@ def les_meilleures(instance:list) -> list:
     sanct=t[1]
     
     n=time.time()
-    while time.time()-n<10 :
+    while time.time()-n<len(instance)/80 :
         combinaison=construit(region.copy(),sanct.copy())
         score=compte_points(combinaison)
         if score>meilleur_score:
