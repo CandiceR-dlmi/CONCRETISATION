@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 22 13:19:21 2025
-
-@author: loulou
-"""
 from lecture_fichier import lecture, sortie
 from construction_initiale import les_meilleures
 import time
