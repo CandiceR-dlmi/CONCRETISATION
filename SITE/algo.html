@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet Faraway - DLMI 5</title>
+  <link rel="stylesheet" href="concre.css" />
+  </head>
+<body>
+  <header>
+    <nav>
+        <h1><a href="accueil.html">Projet Faraway</a></h1>
+        <ul>
+        <li><a href="probleme.html">Problème</a></li>
+        <li><a href="algo.html">Méthodes</a></li>
+        <li><a href="code_src.html">Utilisation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="algo">
+      <h2>Algorithmes et Méthodologie</h2>
+      <p>Pour résoudre ce problème, nous avons opté pour une adapation de <b><a href="https://fr.wikipedia.org/wiki/Algorithme_%C3%A0_estimation_de_distribution">l'algorithme d'estimation distribution</a></b>. Utilisé pour résoudre des problèmes d'optimisation via la manipulation d'un échantillon, 
+        il correspondait à notre "méthodologie".</p>
+      <p>Par étape le déroulement de notre programme :</p>
+      <ol>
+        <li>Créer un échantillon de 8 cartes régions ainsi que une main de sanctuaire aléatoirement en gardant uniquement les meilleures combinaisons (fonction <b>les_meilleures)</b></li>
+        <li>Mettre dans une matrice M carrée de taille len(inst) **2 les points rapportés en moyenne par une carte appartenant a cette instance en position j pour la premiere carte et i la carte suivant celle ci dans l'instance (fonction <b>cartes_suiv)</b></li>
+        <li>Harmoniser le tout pour que chaque carte puisse être choisie et pouvoir utiliser random.sample(qui n'accepte pas des flottants ou 0 comme valeur (fonction <b>harmonie()</b>)</li>
+        <li>Créer une nouvelle instance grâce à la matrice précédente (fonction <b>rand_inst_w_suiv</b>)</li>
+        <li>Faire tourner plusieurs fois les trois dernières étapes (<b>run</b>)</li>
+      </ol>
+  </section>
+  </main>
+
+  <footer>
+    <p>Projet réalisé par Candice RAGEY--DEPOIL Louis LOUVEL et Laly HROUCH — 2025</p>
+  </footer>
+</body>
+</html>

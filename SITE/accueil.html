@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet Faraway - DLMI 5</title>
+  <link rel="stylesheet" href="concre.css" />
+  </head>
+<body>
+  <div id="loader">
+  <div class="loader-symbol">🧭</div>
+  <div class="loader-text">Exploration en cours...</div>
+  </div>
+
+  <header>
+    <nav>
+        <h1><a href="accueil.html">Projet Faraway</a></h1>
+        <ul>
+        <li><a href="probleme.html">Problème</a></li>
+        <li><a href="algo.html">Méthodes</a></li>
+        <li><a href="code_src.html">Utilisation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Optimisation de résultats du jeu Faraway</h2>
+      <p>Bienvenue sur le site de présentation de notre projet d'informatique. Vous trouverez ici tous les éléments relatifs à notre approche,<a href="algo.html"> nos algorithmes</a> et la manière d'utiliser notre <a href="code_src.html">code source</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projet réalisé par Candice RAGEY--DEPOIL Louis LOUVEL et Laly HROUCH — 2025</p>
+  </footer>
+  <script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.body.classList.add("loaded");
+    }, 2500); // laisse le temps à l'animation de se finir
+  });
+</script>
+
+</body>
+</html>
