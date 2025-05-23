@@ -1,4 +1,4 @@
-from Toutcombine import *
+from Execution import run
 import threading 
 
 t1=threading.Thread(target=run, args=('competition_01.txt',))
