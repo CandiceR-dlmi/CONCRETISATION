@@ -1,0 +1,1 @@
+Pour exécuter notre code source, il suffit de télécharger les fichier .py en les mettant dans le même dossier et seulement en exécutant le fichier Execution.py, dans lequel on rentre le nom du fichier en paramètres, on obtient le résultat demandé.
